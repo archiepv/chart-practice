@@ -64,20 +64,21 @@
 
         // Create the data table.
 				// Two times 0-100, five times 100-200, three times 200-300
-        var data = new google.visualization.arrayToDataTable();
-        data.addColumn('string', 'Expense');
-        data.addColumn('number', 'Cents');
-        data.addRows([
-					['Semester', 'Credits', {role: 'style'}],
-          ['Fall 2018', 0, '#114789'],
-					['Spring 2019', 0, '#8faeff'],
-					['Fall 2019', 1, '#114789'],
-					['Spring 2020', 1, '#8faeff'],
-					['Fall 2020', 3, '#114789f'],
-          ['Spring 2021', 3, '#8faeff'],
-					['Fall 2021', 3, '#114789'],
-          ['Spring 2022', 3, '#8faeff']
-        ]);
+        var data = new google.visualization.arrayToDataTable(
+        	[
+					
+						['Semester', 'Credits', {role: 'style'}],
+						['Fall 2018', 0, '#114789'],
+						['Spring 2019', 0, '#8faeff'],
+						['Fall 2019', 1, '#114789'],
+						['Spring 2020', 1, '#8faeff'],
+						['Fall 2020', 3, '#114789f'],
+						['Spring 2021', 3, '#8faeff'],
+						['Fall 2021', 3, '#114789'],
+						['Spring 2022', 3, '#8faeff']
+						
+					]
+        );
 
         // Set chart options
         var options = {'title':'Each Dollar Donated Goes To',
